@@ -33,5 +33,5 @@ spec:
           helm:
             releaseName: '{{.releaseName}}'
       destination:
-        name: sandbox
+        name: upgrade
         namespace: '{{.namespace}}'
