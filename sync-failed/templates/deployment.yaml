@@ -5,9 +5,9 @@ metadata:
   namespace: {{ .Values.namespace }}
   labels:
     {{- include "hello-world.labels" . | nindent 4 }}
-  annotations:
-    argocd.argoproj.io/sync-wave: "5"
-    argocd.argoproj.io/hook: Sync
+  # annotations:
+  #   argocd.argoproj.io/sync-wave: "5"
+  #   argocd.argoproj.io/hook: Sync
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
