@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: syncFailed
+  name: sync-failed-job
   annotations:
     argocd.argoproj.io/hook: SyncFail
 spec:
