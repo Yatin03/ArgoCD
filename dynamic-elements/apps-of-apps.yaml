@@ -7,11 +7,11 @@ spec:
   syncPolicy:
     automated: {}
   source:
-    repoURL: https://github.com/argoproj/argo-cd.git
-    targetRevision: main
+    repoURL: https://github.com/Yatin03/ArgoCD.git
+    targetRevision: HEAD
     path: dynamic-elements/argocd
     directory:
       recurse: true
   destination:
-    name: sandbox
+    name: in-cluster
     namespace: argocd
