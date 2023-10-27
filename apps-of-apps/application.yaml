@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-apps
+  name: demo-apps-of-apps
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: default
-    server: 'https://kubernetes.default.svc'
+    name: in-cluster
   source:
     path: apps-of-apps/argocd-apps
-    repoURL: https://git-bitbucket.aws.fico.com:8443/scm/gitops/crossplane_conf.git
+    repoURL: https://github.com/Yatin03/ArgoCD.git
     targetRevision: HEAD
   project: default
   syncPolicy:
