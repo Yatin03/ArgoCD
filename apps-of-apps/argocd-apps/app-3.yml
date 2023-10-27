@@ -19,9 +19,9 @@ spec:
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
-    automated:
-      prune: true
-      selfHeal: true
+#    automated:
+#      prune: true
+#      selfHeal: true
   # dependencies:
   # - name: my-apps-2
   #   namespace: argocd
