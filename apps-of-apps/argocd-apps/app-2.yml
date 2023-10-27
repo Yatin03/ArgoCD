@@ -17,6 +17,8 @@ spec:
     repoURL: https://github.com/Yatin03/ArgoCD.git
     targetRevision: HEAD
   syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
     automated:
       prune: true
       selfHeal: true
